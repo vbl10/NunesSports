@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.conteudo {
+    padding: 0 5vw;
+    max-width: 1200px;
+    margin: auto;
+}
+
+nav {
+    background-color: #4CAF50; /* Green background for header */
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+nav h1 {
+    color: white;
+    font-size: 24pt;
+}
+
+hr {
+    color: #65d368;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #397c3b;
+}
+
+/* Basic table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Table header styling */
+th {
+    background-color: #4CAF50; /* Green background for header */
+    color: white; /* White text color */
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 2px solid #ddd; /* Light gray border below header */
+}
+
+/* Table cell styling */
+td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd; /* Light gray border between rows */
+}
+
+tbody > tr {
+    cursor: pointer;
+}
+
+/* Zebra striping for rows */
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Light gray background for even rows */
+}
+
+/* Hover effect for rows */
+tr:hover {
+    background-color: #f1f1f1; /* Slightly darker gray for hover effect */
+}
+
+/* Table container styling */
+.table-container {
+    max-width: 100%;
+    overflow-x: auto; /* Scroll if the table is too wide */
+}
+
+/* Optional: Add some rounded corners */
+table {
+    border-radius: 8px;
+    overflow: hidden; /* Ensure corners are rounded properly */
+}
+
+/* Basic form container styling */
+.form-container {
+    max-width: 100%;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Form element styling */
+form {
+    background-color: #fff; /* White background for the form */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Label styling */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333; /* Dark text color for labels */
+}
+
+/* Input and textarea styling */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+textarea,
+select {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 12px;
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px; /* Adjust font size for readability */
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+
+/* Focus state for inputs and textareas */
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #4CAF50; /* Green border color on focus */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.2); /* Subtle shadow for focus */
+}
+
+/* Button styling */
+button,
+input[type="submit"] {
+    background-color: #4CAF50; /* Green background for buttons */
+    color: white; /* White text color */
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+/* Button hover effect */
+button:hover,
+input[type="submit"]:hover {
+    background-color: #45a049; /* Slightly darker green on hover */
+}
+
+/* Optional: Add some spacing between form controls */
+form > *:not(:last-child) {
+    margin-bottom: 12px;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NunesSports</title>
+
+    <link rel="stylesheet" href="index.css">
+    <script defer src="index.js"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="conteudo">
+            <h1>NunesSports</h1>
+        </div>
+    </nav>
+    <div class="conteudo">
+        <h2>Produtos</h2>
+        <hr style="margin: 15px 0;">
+        <div style="display: flex; gap: 20px;">
+            <div>
+                <div style="display: flex; flex-direction: column;">
+                    <input id="inputCodigo" type="number" placeholder="Código">
+                    <input id="inputNome" type="text" placeholder="Nome">
+                    <input id="inputDescricao" type="text" placeholder="Descrição">
+                    <input id="inputPreco" type="number" placeholder="Preço">
+                </div>
+                <div style="display: flex; gap: 10px;">                    
+                    <button onclick="inserirProduto()">Inserir</button>
+                    <button onclick="removerProduto()">Remover</button>
+                    <button onclick="atualizarProduto()">Atualizar</button>
+                </div>
+                <p id="pErroDeEntrada"></p>
+            </div>
+            <div>
+                <button onclick="atualizarProdutos()">Atualizar</button>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Código</th>
+                            <th>Nome</th>
+                            <th>Preço</th>
+                            <th>Descrição</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableProdutos">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
